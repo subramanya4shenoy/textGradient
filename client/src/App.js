@@ -11,7 +11,7 @@ export const App = () => {
   return (
     <>
       <CommonPageDecoration />
-      <div className="w-screen h-screen overflow-hidden fixed z-10">
+      <div className="w-screen h-screen overflow-hidden fixed z-10 pt-20">
         <DocumentTitle title='Text Gradient' />
         <Router>
           <Routes>
@@ -22,11 +22,6 @@ export const App = () => {
             <Route path='*' element={<Page404 />} />
           </Routes>
         </Router>
-        Future is now, oldman
-
-        {/* <div className='w-screen h-screen overflow-visible'>
-      <iframe src='https://my.spline.design/noisedisplacecopy-d225e306cbce9953001808f16cc1f798/' frameborder='0' width='100%' height='100%'></iframe>
-    </div> */}
       </div>
     </>
   );
