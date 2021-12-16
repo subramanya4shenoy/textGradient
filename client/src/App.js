@@ -10,7 +10,8 @@ import CommonPageDecoration from './component/macro/CommonPageDecoration';
 export const App = () => {
   return (
     <>
-      <div className="w-screen h-screen overflow-hidden fixed z-10 dark:bg-primary translate-y-2 transition ease-in duration-700">
+      <CommonPageDecoration />
+      <div className="w-screen h-screen overflow-hidden fixed z-10">
         <DocumentTitle title='Text Gradient' />
         <Router>
           <Routes>
@@ -27,7 +28,6 @@ export const App = () => {
       <iframe src='https://my.spline.design/noisedisplacecopy-d225e306cbce9953001808f16cc1f798/' frameborder='0' width='100%' height='100%'></iframe>
     </div> */}
       </div>
-      <CommonPageDecoration />
     </>
   );
 }

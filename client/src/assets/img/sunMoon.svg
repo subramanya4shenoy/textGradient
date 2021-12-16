@@ -10,15 +10,15 @@
     <g id="Page-1-2" data-name="Page-1" transform="translate(2231 1620)">
       <g id="Artboard-2" data-name="Artboard" transform="translate(-919 -2066)">
         <g id="sun" transform="translate(920 2067)">
-          <circle id="Oval" cx="5" cy="5" r="5" transform="translate(6 6)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-          <path id="Shape-2" data-name="Shape" d="M11,0V2" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
-          <path id="Shape-3" data-name="Shape" d="M11,20v2" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
-          <path id="Shape-4" data-name="Shape" d="M3.22,3.22,4.64,4.64" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
-          <path id="Shape-5" data-name="Shape" d="M17.36,17.36l1.42,1.42" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
-          <path id="Shape-6" data-name="Shape" d="M0,11H2" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
-          <path id="Shape-7" data-name="Shape" d="M20,11h2" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
-          <path id="Shape-8" data-name="Shape" d="M3.22,18.78l1.42-1.42" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
-          <path id="Shape-9" data-name="Shape" d="M17.36,4.64l1.42-1.42" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+          <circle id="Oval" cx="5" cy="5" r="5" transform="translate(6 6)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path id="Shape-2" data-name="Shape" d="M11,0V2" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+          <path id="Shape-3" data-name="Shape" d="M11,20v2" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+          <path id="Shape-4" data-name="Shape" d="M3.22,3.22,4.64,4.64" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+          <path id="Shape-5" data-name="Shape" d="M17.36,17.36l1.42,1.42" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+          <path id="Shape-6" data-name="Shape" d="M0,11H2" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+          <path id="Shape-7" data-name="Shape" d="M20,11h2" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+          <path id="Shape-8" data-name="Shape" d="M3.22,18.78l1.42-1.42" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+          <path id="Shape-9" data-name="Shape" d="M17.36,4.64l1.42-1.42" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
         </g>
       </g>
     </g>
