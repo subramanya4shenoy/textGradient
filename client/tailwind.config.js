@@ -7,10 +7,10 @@ module.exports = {
       'desktop': {'min': '641px'}
     },
     colors: {
-      'blue': '#1fb6ff',
       'primary': '#230041',
       'secondary': '#6100B4',
-      'accent': '#FF3B3B'
+      'accent': '#FF3B3B',
+      'white': '#fff'
     },
     extend: {},
   },
