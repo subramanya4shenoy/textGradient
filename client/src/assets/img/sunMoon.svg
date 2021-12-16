@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="75.343" height="24.803" viewBox="0 0 75.343 24.803">
+  <g id="Group_14" data-name="Group 14" transform="translate(-2179.657 -1620)">
+    <g id="Page-1" transform="matrix(0.999, -0.035, 0.035, 0.999, 2179.62, 1621.375)">
+      <g id="Artboard" transform="translate(1.038 1)">
+        <g id="moon" transform="translate(0)">
+          <path id="Shape" d="M21.481,11.687A10.744,10.744,0,1,1,9.794,0,8.357,8.357,0,0,0,21.481,11.687Z" transform="translate(-0.038)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+        </g>
+      </g>
+    </g>
+    <g id="Page-1-2" data-name="Page-1" transform="translate(2231 1620)">
+      <g id="Artboard-2" data-name="Artboard" transform="translate(-919 -2066)">
+        <g id="sun" transform="translate(920 2067)">
+          <circle id="Oval" cx="5" cy="5" r="5" transform="translate(6 6)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path id="Shape-2" data-name="Shape" d="M11,0V2" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+          <path id="Shape-3" data-name="Shape" d="M11,20v2" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+          <path id="Shape-4" data-name="Shape" d="M3.22,3.22,4.64,4.64" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+          <path id="Shape-5" data-name="Shape" d="M17.36,17.36l1.42,1.42" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+          <path id="Shape-6" data-name="Shape" d="M0,11H2" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+          <path id="Shape-7" data-name="Shape" d="M20,11h2" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+          <path id="Shape-8" data-name="Shape" d="M3.22,18.78l1.42-1.42" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+          <path id="Shape-9" data-name="Shape" d="M17.36,4.64l1.42-1.42" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
