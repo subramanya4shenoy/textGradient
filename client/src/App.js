@@ -11,7 +11,7 @@ export const App = () => {
   return (
     <>
       <CommonPageDecoration />
-      <div className="w-screen h-screen overflow-hidden fixed z-10 pt-20">
+      <div className="w-screen h-screen overflow-hidden fixed z-10">
         <DocumentTitle title='Text Gradient' />
         <Router>
           <Routes>
