@@ -9,7 +9,7 @@ function CommonPageDecoration() {
             <div className='absolute left-0 top-0'>
                 <div className='fixed z-20 flex m-5'>
                     <div><img className="w-10 h-10 z-30" src={logo} alt='logo' /></div>
-                    <div className='text-primary self-center mx-2 dark:text-white'>Gradient Text</div>
+                    <div className='text-primary self-center mx-2 dark:text-white ubuntu'>Gradient Text</div>
                 </div>
             </div>
             <div className="fixed z-0 top-0 w-screen h-screen left-0 dark:bg-primary translate-y-2 transition ease-in duration-700 ">
@@ -19,9 +19,9 @@ function CommonPageDecoration() {
                 <ThemeSwitch />
             </div>
 
-            {/* <div className='w-1/2 h-1/2 overflow-visible z-20'>
-                <iframe src='https://my.spline.design/noisedisplacecopy-d225e306cbce9953001808f16cc1f798/' frameborder='0' width='240px' height='240px'></iframe>
-            </div> */}
+            <div className='absolute bottom-0 right-0 w-screen z-50 mx-auto -mt-28 -mr-24 pointer-events-none overflow-hidden'>
+                <iframe className="overflow-hidden" src='https://my.spline.design/noisedisplacecopy-d225e306cbce9953001808f16cc1f798/' frameborder='0' width='100%' height='100%'></iframe>
+            </div>
         </>
     )
 }
