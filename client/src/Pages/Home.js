@@ -1,15 +1,47 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import TextView from '../component/macro/TextView'
+import ShuffleButton from '../component/micro/ShuffleButton';
+import gradient from '../gardients.json';
+import quote from '../quote.json';
 
 function Home() {
+
+    let len = gradient.length;
+    let quotelem = quote.length;
+
+    const [selectedGradient, setselectedGradient] = useState()
+    const [selectedQuote, setquote] = useState()
+
+    const shuffleGradient = () => {setselectedGradient(gradient[Math.floor(Math.random() * len)]); }
+    const shuffleQuote = () => {setquote(quote[Math.floor(Math.random() * quotelem)]); }
+
+    useEffect(() => {
+        shuffleQuote();
+        shuffleGradient();
+    }, [])
+
+
+    // const styleString =
+    //         "background-color: " + selectedGradient.colors[0]+ ";\
+    //         background-image: linear-gradient(45deg,"+ selectedGradient.colors +");\
+    //         background-size: 100%;\
+    //         -webkit-background-clip: text;\
+    //         -moz-background-clip: text;\
+    //         -webkit-text-fill-color: transparent;\
+    //         -moz-text-fill-color: transparent;"
+
     return (
         <>
             <div className='flex flex-nowrap w-screen h-screen dark:text-white'>
                 <div className='w-1/2 self-center'>
-                    <TextView className='text-6xl px-10 ubuntu ' />
+                    {(selectedGradient) && 
+                    (<TextView className='text-4xl leading-relaxed px-10 ubuntu transition ease-in duration-700 ' 
+                                selectedGradient={selectedGradient} 
+                                randomText={selectedQuote}
+                                />)}
                     <div className='flex w-full p-10'>
-                        <div>shuffle font</div>
-                        <div>shuffle grad</div>
+                        <ShuffleButton text="Shuffle Gradient" handleClick={() => shuffleGradient()}/>
+                        <ShuffleButton text="Shuffle Font" handleClick={() => shuffleQuote()}/>
                     </div>
                 </div>
                 <div className='w=1/2'>
