@@ -1,31 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-function TextView({ className }) {
+function TextView({ className, selectedGradient, randomText }) {
 
+    const [gradientStyle, setgradientStyle] = useState({})
 
-    const styleString =
-            "background-color: #f3ec78;\
-            background-image: linear-gradient(45deg, #f3ec78, #af4261);\
-            background-size: 100%;\
-            -webkit-background-clip: text;\
-            -moz-background-clip: text;\
-            -webkit-text-fill-color: transparent;\
-            -moz-text-fill-color: transparent;"
+    useEffect(() => {
+        setgradientStyle({
+            backgroundColor: selectedGradient.colors[0],
+            backgroundImage: ("linear-gradient(45deg, " + selectedGradient.colors.join(", ") + ")"),
+            backgroundSize: "100%",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            MozTextFillColor: "transparent"
+        })
+    }, [selectedGradient]);
 
-const overrideClass = className || '';
+    const overrideClass = className || '';
 
-return (
-    <div className={overrideClass} 
-         style={{backgroundColor: "#f3ec78", 
-                 backgroundImage: "linear-gradient(45deg, #f3ec78, #af4261)",
-                 backgroundSize: "100%",
-                 WebkitBackgroundClip: "text",
-                 WebkitTextFillColor: "transparent",
-                 MozTextFillColor: "transparent"
-                 }}>
-        Awesome text and quotes here
-    </div>
-)
+    return (
+        <div className={overrideClass}
+            style={gradientStyle}>
+            {randomText}
+        </div>
+    )
 }
 
 export default TextView
