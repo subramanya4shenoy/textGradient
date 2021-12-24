@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import CodeBox from '../component/macro/CodeBox';
 import TextView from '../component/macro/TextView'
 import ShuffleButton from '../component/micro/ShuffleButton';
 import gradient from '../gardients.json';
@@ -11,8 +12,12 @@ function Home() {
 
     const [selectedGradient, setselectedGradient] = useState()
     const [selectedQuote, setquote] = useState()
+    const [styleCSS, setstyleCSS] = useState('');
 
-    const shuffleGradient = () => {setselectedGradient(gradient[Math.floor(Math.random() * len)]); }
+    const shuffleGradient = () => {
+        setselectedGradient(gradient[Math.floor(Math.random() * len)]); 
+        setstyleCSS('disply:block')
+    }
     const shuffleQuote = () => {setquote(quote[Math.floor(Math.random() * quotelem)]); }
 
     useEffect(() => {
@@ -44,9 +49,9 @@ function Home() {
                         <ShuffleButton text="Shuffle Font" handleClick={() => shuffleQuote()}/>
                     </div>
                 </div>
-                <div className='w=1/2'>
-                    gradientname
-                    codeBox
+                <div className='w-1/2 self-center desktop:ml-10'>
+                    Gradient name - <span className='capitalize text-xl roboto'>{selectedGradient?.name}</span>
+                    <CodeBox css={styleCSS}/>
                 </div>
             </div>
             <div className='w-full'>
