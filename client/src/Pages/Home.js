@@ -31,8 +31,8 @@ function Home() {
     //         -moz-text-fill-color: transparent;"
 
     return (
-        <>
-            <div className='flex flex-nowrap w-screen h-screen dark:text-white'>
+        <div className='desktop:max-w-6xl w-screen desktop:mx-auto'>
+            <div className='flex flex-nowrap w-full h-screen dark:text-white'>
                 <div className='w-1/2 self-center'>
                     {(selectedGradient) && 
                     (<TextView className='text-4xl leading-relaxed px-10 ubuntu transition ease-in duration-700 ' 
@@ -52,7 +52,7 @@ function Home() {
             <div className='w-full'>
                 gardient selection
             </div>
-        </>
+        </div>
     )
 }
 
