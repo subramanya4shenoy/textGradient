@@ -15,9 +15,13 @@ function Home() {
     const [styleCSS, setstyleCSS] = useState('');
 
     const shuffleGradient = () => {
-        setselectedGradient(gradient[Math.floor(Math.random() * len)]); 
-        setstyleCSS('disply:block')
+        let randomLength = Math.floor(Math.random() * len);
+        setselectedGradient(gradient[randomLength]);
+        console.log(gradient[randomLength]);
+        let cssString = "background-color: "+gradient[randomLength].colors[0]+"; \nbackground-image: linear-gradient(45deg, "+ [...gradient[randomLength].colors] +");\nbackground-size: 100%;\n-webkit-background-clip: text;\n-moz-background-clip: text;\n-webkit-text-fill-color: transparent;\n-moz-text-fill-color: transparent;'"
+        setstyleCSS(cssString);
     }
+
     const shuffleQuote = () => {setquote(quote[Math.floor(Math.random() * quotelem)]); }
 
     useEffect(() => {
@@ -52,6 +56,9 @@ function Home() {
                 <div className='w-1/2 self-center desktop:ml-10'>
                     Gradient name - <span className='capitalize text-xl roboto'>{selectedGradient?.name}</span>
                     <CodeBox css={styleCSS}/>
+                     <div className='absolute bottom-0 right-0 w-1/2 z-50 mx-auto -mt-28 pointer-events-none overflow-hidden'>
+                         <iframe className="overflow-hidden" src='https://my.spline.design/noisedisplacecopy-d225e306cbce9953001808f16cc1f798/' frameborder='0' width='100%' height='100%'></iframe>
+                    </div>
                 </div>
             </div>
             <div className='w-full'>

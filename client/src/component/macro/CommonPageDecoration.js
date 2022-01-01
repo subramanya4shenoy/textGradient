@@ -18,10 +18,6 @@ function CommonPageDecoration() {
             <div className="absolute top-0 right-0 z-20">
                 <ThemeSwitch />
             </div>
-
-            <div className='absolute bottom-0 right-0 w-screen z-50 mx-auto -mt-28 -mr-24 pointer-events-none overflow-hidden'>
-                <iframe className="overflow-hidden" src='https://my.spline.design/noisedisplacecopy-d225e306cbce9953001808f16cc1f798/' frameborder='0' width='100%' height='100%'></iframe>
-            </div>
         </>
     )
 }
