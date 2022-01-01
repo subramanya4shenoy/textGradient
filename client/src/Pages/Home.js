@@ -29,16 +29,6 @@ function Home() {
         shuffleGradient();
     }, [])
 
-
-    // const styleString =
-    //         "background-color: " + selectedGradient.colors[0]+ ";\
-    //         background-image: linear-gradient(45deg,"+ selectedGradient.colors +");\
-    //         background-size: 100%;\
-    //         -webkit-background-clip: text;\
-    //         -moz-background-clip: text;\
-    //         -webkit-text-fill-color: transparent;\
-    //         -moz-text-fill-color: transparent;"
-
     return (
         <div className='desktop:max-w-6xl w-screen desktop:mx-auto'>
             <div className='flex flex-nowrap w-full h-screen dark:text-white'>
