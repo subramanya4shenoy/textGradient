@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import CodeBox from '../component/macro/CodeBox';
+import LeftRail from '../component/macro/LeftRail';
+import RightRail from '../component/macro/RightRail';
 import TextView from '../component/macro/TextView'
 import ShuffleButton from '../component/micro/ShuffleButton';
 import gradient from '../gardients.json';
@@ -18,11 +20,11 @@ function Home() {
         let randomLength = Math.floor(Math.random() * len);
         setselectedGradient(gradient[randomLength]);
         console.log(gradient[randomLength]);
-        let cssString = "background-color: "+gradient[randomLength].colors[0]+"; \nbackground-image: linear-gradient(45deg, "+ [...gradient[randomLength].colors] +");\nbackground-size: 100%;\n-webkit-background-clip: text;\n-moz-background-clip: text;\n-webkit-text-fill-color: transparent;\n-moz-text-fill-color: transparent;'"
+        let cssString = "background-color: " + gradient[randomLength].colors[0] + "; \nbackground-image: linear-gradient(45deg, " + [...gradient[randomLength].colors] + ");\nbackground-size: 100%;\n-webkit-background-clip: text;\n-moz-background-clip: text;\n-webkit-text-fill-color: transparent;\n-moz-text-fill-color: transparent;'"
         setstyleCSS(cssString);
     }
 
-    const shuffleQuote = () => {setquote(quote[Math.floor(Math.random() * quotelem)]); }
+    const shuffleQuote = () => { setquote(quote[Math.floor(Math.random() * quotelem)]); }
 
     useEffect(() => {
         shuffleQuote();
@@ -31,29 +33,26 @@ function Home() {
 
     return (
         <div className='desktop:max-w-6xl w-screen desktop:mx-auto'>
-            <div className='flex flex-nowrap w-full h-screen dark:text-white'>
-                <div className='w-1/2 self-center'>
-                    {(selectedGradient) && 
-                    (<TextView className='text-4xl leading-relaxed px-10 ubuntu transition ease-in duration-700 ' 
-                                selectedGradient={selectedGradient} 
-                                randomText={selectedQuote}
-                                />)}
-                    <div className='flex w-full p-10'>
-                        <ShuffleButton text="Shuffle Gradient" handleClick={() => shuffleGradient()}/>
-                        <ShuffleButton text="Shuffle Font" handleClick={() => shuffleQuote()}/>
-                    </div>
-                </div>
-                <div className='w-1/2 self-center desktop:ml-10'>
-                    Gradient name - <span className='capitalize text-xl roboto'>{selectedGradient?.name}</span>
-                    <CodeBox css={styleCSS}/>
-                     <div className='absolute bottom-0 right-0 w-1/2 z-50 mx-auto -mt-28 pointer-events-none overflow-hidden'>
-                         <iframe className="overflow-hidden" src='https://my.spline.design/noisedisplacecopy-d225e306cbce9953001808f16cc1f798/' frameborder='0' width='100%' height='100%'></iframe>
-                    </div>
-                </div>
-            </div>
+
             <div className='w-full'>
                 gardient selection
             </div>
+
+            <div className='flex flex-nowrap w-full h-screen dark:text-white'>
+                {(selectedQuote) &&
+                    (<LeftRail className='w-1/2 self-center' selectedGradient={selectedGradient}
+                        selectedQuote={selectedQuote}
+                        shuffleGradient={() => shuffleGradient()}
+                        shuffleQuote={() => shuffleQuote()} />
+                    )}
+
+                <RightRail className="w-1/2 self-center desktop:ml-10"
+                    selectedGradient={selectedGradient}
+                    styleCSS={styleCSS}
+                />
+
+            </div>
+
         </div>
     )
 }
