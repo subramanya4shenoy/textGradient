@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import CodeBox from '../component/macro/CodeBox';
+import GradientRunner from '../component/macro/GradientRunner';
 import LeftRail from '../component/macro/LeftRail';
 import RightRail from '../component/macro/RightRail';
-import TextView from '../component/macro/TextView'
-import ShuffleButton from '../component/micro/ShuffleButton';
 import gradient from '../gardients.json';
 import quote from '../quote.json';
 
@@ -34,8 +32,8 @@ function Home() {
     return (
         <div className='desktop:max-w-6xl w-screen desktop:mx-auto'>
 
-            <div className='w-full'>
-                gardient selection
+            <div className='absolute w-full mt-24 left-0'>
+                <GradientRunner gradients={gradient}/>
             </div>
 
             <div className='flex flex-nowrap w-full h-screen dark:text-white'>
@@ -48,8 +46,7 @@ function Home() {
 
                 <RightRail className="w-1/2 self-center desktop:ml-10"
                     selectedGradient={selectedGradient}
-                    styleCSS={styleCSS}
-                />
+                    styleCSS={styleCSS} />
 
             </div>
 
