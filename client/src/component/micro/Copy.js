@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 // import copy from '../../assets/images/copy.svg';
 
 const CopyButton = ({ content }) => {
-
+    //!refactor
     const copyToClipboard = () => {
         navigator.clipboard.writeText(content);
     };
