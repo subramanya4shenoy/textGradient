@@ -1,7 +1,8 @@
 
 
-# Fullstack project (#2). 🎖 
-🧐 A simple utility web page for developers and designers to get css for the new trend in town, 'The graded texts'. 
+# Fullstack project (#2). 🎖 <a href="https://gradientext.netlify.app/">DEMO</a>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ba9d9a9d-20e8-4222-b4a0-a2c3d079b789/deploy-status)](https://app.netlify.com/sites/gradientext/deploys)
+<br>🧐 A simple utility web page for developers and designers to get css for the new trend in town, 'The graded texts'. 
 <br>
 <br>
 ## Tech stack 🔵 🧶 👩🏻‍💻 🎒 ☄️ ##
