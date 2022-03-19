@@ -1,5 +1,5 @@
 import React from 'react';
-import ThemeSwitch from '../micro/ThemSwitch';
+import ThemeSwitch from '../micro/ThemeSwitch';
 // import bgG from '../../assets/img/bgGradient.png';
 import logo from '../../assets/img/logo.svg';
 
