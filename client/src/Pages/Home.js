@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import GradientRunner from '../component/macro/GradientRunner';
+// import GradientRunner from '../component/macro/GradientRunner';
 import LeftRail from '../component/macro/LeftRail';
-import RightRail from '../component/macro/RightRail';
+import GradientList from '../component/micro/GradientList';
 import gradient from '../gardients.json';
 import quote from '../quote.json';
 
@@ -41,32 +41,28 @@ function Home() {
   }, []);
 
   return (
-    <div className="desktop:max-w-6xl w-screen desktop:mx-auto">
-      <div className="flex flex-wrap w-full dark:text-white mt-40">
-        {selectedQuote && (
-          <LeftRail
-            className="w-full self-center"
-            selectedGradient={selectedGradient}
-            selectedQuote={selectedQuote}
-            shuffleGradient={() => shuffleGradient()}
-            shuffleQuote={() => shuffleQuote()}
-          />
-        )}
-
-        <RightRail
-          className="w-full self-center desktop:ml-10"
+    <div className="flex flex-wrap w-full dark:text-white mt-40 overflow-auto">
+      {selectedQuote && (
+        <LeftRail
+          className="w-full self-center"
           selectedGradient={selectedGradient}
+          selectedQuote={selectedQuote}
           styleCSS={styleCSS}
+          shuffleGradient={() => shuffleGradient()}
+          shuffleQuote={() => shuffleQuote()}
         />
-      </div>
-
-      <div className="absolute w-full mt-24 left-0">
-        <GradientRunner
-          gradients={gradient}
-          setstyleCSS={(e) => {
-            setGradientToText(e);
-          }}
-        />
+      )}
+      <div className="mx-24 mobile:mx-10 flex flex-wrap">
+        {gradient.map((grad, index) => (
+          <GradientList
+            // eslint-disable-next-line react/no-array-index-key
+            key={`gradient_${index}`}
+            gradient={grad}
+            setstyleCSS={(e) => {
+              setGradientToText(e);
+            }}
+          />
+        ))}
       </div>
     </div>
   );

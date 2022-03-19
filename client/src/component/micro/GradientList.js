@@ -3,7 +3,7 @@ import React from 'react';
 function GradientList({ gradient, setstyleCSS }) {
   return (
     <div
-      className="h-3 w-3 rounded-full m-2 cursor-pointer flex"
+      className="h-6 w-6 rounded-full m-2 cursor-pointer"
       onClick={() => {
         setstyleCSS(gradient);
       }}
