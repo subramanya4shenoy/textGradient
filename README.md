@@ -16,31 +16,19 @@
  - 🧶 React-hooks 
  - 🧶 Materialize UI 
  - 🧶 Tailwind CSS utility
- - 🧶 GraphQL 
- - 🧶 ApolloGraphQL
  
  
 #### 🔵 __Backend stack__ ####
- - 🏀 Node 
- - 🏀 Express 
- - 🏀 GraphQL 
- - 🏀 mongoose
- - 🏀 Apollo server
- 
- 
-#### 🔵 __Database__ ####
- - 🎒 MongoDB
+No backend.
  
  
 #### 🔵 __Deployment__ ####
- - ☄️ Heroku - Node 
  - ☄️ Netlify - UI
- - ☄️ Mongo DB Atlas - DB
 
 #### 🔵 __DEMO__ ####
-- https://correct-me.netlify.app/ (Stage: pre-Alpha)
+- https://gradientext.netlify.app/ (Stage: pre-Alpha)
 
 
 #### End ####
-Project has been worked over 17days. <br> This is closed now, but open for bug reporting, code review and CONTRIBUTIONS. <br><br>
+This is in progress, but open for bug reporting, code review and CONTRIBUTIONS. <br><br>
 with love ❤️❤️❤️❤️❤️
