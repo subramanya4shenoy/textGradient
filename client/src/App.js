@@ -11,7 +11,7 @@ export default function App() {
   return (
     <>
       <CommonPageDecoration />
-      <div className="w-screen h-screen overflow-hidden fixed z-10">
+      <div className="w-screen h-screen overflow-auto fixed z-10">
         <DocumentTitle title="Text Gradient" />
         <Router>
           <Routes>
